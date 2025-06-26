@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torch_logpolar"
+version = "0.0.1"
+description = "Log-Polar Transform computation in PyTorch"
+authors = [
+    { name = "Simon Bertrand", email = "simonbertrand.contact@gmail.com" },
+]
+maintainers = [
+    { name = "Simon Bertrand", email = "simonbertrand.contact@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "images",
+    "log-polar",
+    "pytorch"
+]
+
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = [
+    "torch",
+]
+
+
+[project.urls]
+Repository = "https://github.com/Simon-Bertrand/LogPolar-PyTorch/"
+
+[tool.setuptools.packages.find]
+include = ["torch_logpolar"]
